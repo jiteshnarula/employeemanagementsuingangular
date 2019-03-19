@@ -1,0 +1,20 @@
+<form class="form-group" #loginCheck="ngForm" (ngSubmit)="loginFunction(loginCheck.value)">
+  <div>
+    <label for="name">Username</label>
+    <input type="text" placeholder="Enter Username" 
+    class="form-control" id="name"
+    ngModel name="name"/>
+  </div>
+ 
+<div class="form-group">
+  <label for="password">Password</label>
+  <input type="text" ngModel class="form-control"
+   placeholder="Enter Password" id="password" 
+   name="password"/>
+</div>
+
+<button type="submit" class="btn btn-success">Login</button>&nbsp;
+<button type="reset" class="btn btn-success">Clear</button>&nbsp;
+<button class="btn btn-success" routerLink="/home-page">Go Back</button>
+
+</form>

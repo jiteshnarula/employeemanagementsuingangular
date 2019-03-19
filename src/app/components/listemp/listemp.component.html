@@ -1,0 +1,29 @@
+
+<button class="btn btn-success"[routerLink]="['/addemployee']" > Add Employee</button>
+
+<div class="table-responsive">          
+    <table class="table">
+      <thead>
+        <tr class="text-center">
+          <th>#</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th colspan="2">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="text-center" *ngFor="let i of empList;let p = index"> 
+          <td>{{p+1}}</td>
+          <td>{{i.name}}</td>
+          <td>{{i.email}}</td>
+          <td>
+            <button class="btn btn-danger" [routerLink]="['/updateemp-page',i.id]"> Edit </button>
+          </td>
+          <td>
+              <button class="btn btn-danger" (click)="deleteStudent(i.id)" > Delete </button>
+          </td>
+            
+        </tr>
+      </tbody>
+    </table>
+    </div>

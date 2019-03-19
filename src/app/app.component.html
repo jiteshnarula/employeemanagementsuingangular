@@ -1,0 +1,38 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+  <div class="jumbotron">
+    <h6 class="display-3">Employee Management System</h6>
+  </div>
+
+  <div class="row">
+    <div class="col-md-11">
+
+    </div>
+
+    <div class="col-md-1">
+      <button class="btn btn-primary" routerLink="/login-page">Login</button>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+      <div class="col-md-7">
+          <router-outlet></router-outlet>
+      </div>  
+      <div class="col-md-5">
+        <img src="../assets/ems1.jpg" alt="Image not found"  >
+      </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-7">
+     <p class="text-center"> All rights are reserved by <span class="text-danger" style="font-weight:bold">Capgemini @2019</span></p>
+    </div>
+    <div class="col-md-5">
+      <p class="text-center "><span class="text-primary">{{date|date:"longDate"}}</span></p>
+    </div>
+  </div>
+
+</div>
+
+
